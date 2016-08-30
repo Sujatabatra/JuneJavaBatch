@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="Karan" class="com.sujata.demo.Juggler"></bean>
+
+<bean id="Sumit" class="com.sujata.demo.Juggler">
+<constructor-arg value="5"></constructor-arg>
+</bean>
+
+<bean id="Eshan" class="com.sujata.demo.Singer">
+	<property name="song" value="Kala Chasma"></property>
+</bean>
+
+<bean id="Shivendra" class="com.sujata.demo.Dancer"></bean>
+
+<bean id="drum" class="com.sujata.demo.Drum"></bean>
+<bean id="Dablu" class="com.sujata.demo.Instrumentalist" autowire="constructor">
+
+</bean>
+<!--  <bean id="Dablu" class="com.sujata.demo.Instrumentalist" autowire="byType">
+
+</bean>
+-->
+<!--  <bean id="instrument" class="com.sujata.demo.Guitar"></bean>
+<bean id="drum" class="com.sujata.demo.Drum"></bean>
+
+<bean id="Dablu" class="com.sujata.demo.Instrumentalist" autowire="byName">
+</bean>
+-->
+</beans>
